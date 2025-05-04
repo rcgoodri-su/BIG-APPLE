@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('nycskyline.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            font-family: "Sedgwick Ave Display", cursive;
+            color: #f44ff6;
+            font-weight: 400;
+            font-size: 7em;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-family: "Sedgwick Ave Display", cursive;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 15px;
+            background-color: #f34ff6e0;
+            border-radius: 20px;
+        }
+        .event {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .event .date,
+        .event .details {
+            flex-basis: 70%;
+        }
+        .event .date {
+            font-weight: bold;
+        }
+        a {
+            font-family: "Sedgwick Ave Display", cursive;
+            font-style: normal;
+            font-weight: 400;
+            color:#000000; 
+            font-size: 2em; 
+        }
+        .embed-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            overflow-x: auto;
+            margin: 100px;
+            padding: 10px;
+        }
+        .embed-container .tiktok-embed {
+            flex: 0 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://rcgoodri-su.github.io/ist263/project/homepage">HOME</a> ||
+        <a href="https://rcgoodri-su.github.io/BIG-APPLE/project/fashion">FASHION</a> ||
+        <a href="https://rcgoodri-su.github.io/BIG-APPLE/project/exchange">CREATOR CONNECT</a>
+    </nav>
+    <hr>
+    <h1>CREATOR CONNECT</h1>
+    <div class="embed-container">
+        <div class="tiktok-embed-wrapper">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wisdm8" data-unique-id="wisdm8" data-embed-type="creator" style="max-width: 780px; min-width: 288px;"> <section><a target="_blank" href="https://www.tiktok.com/@wisdm8?refer=creator_embed">@wisdm8</a></section>
+            </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div class="tiktok-embed-wrapper">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mia.rodriguez.z.z" data-unique-id="mia.rodriguez.z.z" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@mia.rodriguez.z.z?refer=creator_embed">@mia.rodriguez.z.z</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div class="tiktok-embed-wrapper">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@imdanielsimmons" data-unique-id="imdanielsimmons" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@imdanielsimmons?refer=creator_embed">@imdanielsimmons</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div class="tiktok-embed-wrapper">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@thepeoplegallery" data-unique-id="thepeoplegallery" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@thepeoplegallery?refer=creator_embed">@thepeoplegallery</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <div class="date">May 5, 2025</div>
+            <div class="details">Met Gala 2025 <br> The Metropolitan Museum of Art</div>
+        </div>
+
+        <div class="event">
+            <div class="date">May 15–21, 2025</div>
+            <div class="details">NYCxDesign Festival <br> Various venues across NYC</div>
+        </div>
+        
+        <div class="event">
+            <div class="date">September 11–16, 2025</div>
+            <div class="details">New York Fashion Week (Spring/Summer 2026 Collections) <br> Various venues across NYC</div>
+        </div>
+        
+        <div class="event">
+            <div class="date">September 14–16, 2025</div>
+            <div class="details">COTERIE New York<br> Jacob Javits Center</div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <h2>Event Reminder Sign Up</h2>
+        <p>Sign up below to receive reminders about upcoming events:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

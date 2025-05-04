@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion History Timeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        html {scroll-behavior: smooth;}
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('nycskyline.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #f44ff6;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* The circles on the timeline */
+        .container::after {
+            content: attr(data-year); /* Add data-year attribute */
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #000000;
+            border: 3px solid #f44ff6;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            text-align: center;
+            line-height: 25px;
+        }
+        .left {left: 0;}
+        .right {left: 50%;}
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid rgb(0, 0, 0);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #ff8707;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .left::after, .right::after {
+                left: 15px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+        h2 {
+            font-family: "Sedgwick Ave Display", cursive;
+            font-style: normal;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        a {
+            font-family: "Sedgwick Ave Display", cursive;
+            font-style: normal;
+            color:#000000; 
+            font-size: 2em; 
+        }
+        nav {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://rcgoodri-su.github.io/BIG-APPLE/project/homepage">HOME</a> ||
+        <a href="https://rcgoodri-su.github.io/BIG-APPLE/project/fashion">FASHION</a> ||
+        <a href="https://rcgoodri-su.github.io/BIG-APPLE/project/exchange">CREATOR CONNECT</a>
+    </nav>
+    <hr>
+    <div class="timeline">
+        <div class="container left" data-year="80s">
+            <div class="content">
+                <h2>The 80s: Birth of Street Culture</h2>
+                <p>Iconic fashion statements including baggy jeans, tracksuits, and oversized accessories - Rise of sneaker culture with brands like Nike and Adidas becoming synonymous with hip-hop style - Embrace of bold colors, graffiti prints, and statement jewelry as expressions of urban identity</p>
+            </div>
+        </div>
+        <div class="container right" data-year="90s">
+            <div class="content">
+                <h2>The 90s: Golden Age of Hip-Hop Fashion</h2>
+                <p>Emergence of streetwear brands like FUBU, Karl Kani, and Cross Colours, catering to urban youth - Influence of hip-hop icons like Tupac Shakur, Notorious B.I.G., and TLC on fashion trends - Popularization of sportswear and luxury brands within hip-hop culture, blurring the lines between street style and high fashion</p>
+            </div>
+        </div>
+        <div class="container left" data-year="00s">
+            <div class="content">
+                <h2>The 2000s: Fusion of Streetwear and High Fashion </h2>
+                <p>Collaboration between urban artists and luxury brands, exemplified by Kanye West's partnership with Louis Vuitton and Nike - Embrace of designer labels and high-end accessories as symbols of status within hip-hop communities - Evolution of streetwear aesthetics, incorporating elements of skate culture, punk, and DIY fashion</p>
+            </div>
+        </div>
+        <div class="container right" data-year="10s">
+            <div class="content">
+                <h2>The 2010s: Rise of Sneaker Culture and Influencer Fashion</h2>
+                <p>Proliferation of sneakerhead culture, fueled by limited edition releases and sneaker collaborations - Dominance of social media influencers and celebrities in shaping fashion trends, particularly in streetwear and athleisure - Emphasis on sustainability and ethical fashion practices, driving a shift towards eco-friendly and socially conscious brand</p>
+            </div>
+        </div>
+        <div class="container left" data-year="20s">
+            <div class="content">
+                <h2>Present Day: Diversity and Innovation</h2>
+                <p>Celebration of diversity and inclusivity in fashion, with emerging designers and brands challenging traditional norms - Intersectionality of fashion, music, and activism, with artists using their platforms to advocate for social justice causes - Exploration of gender-neutral and non-binary fashion, blurring boundaries and redefining concepts of style and identity</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

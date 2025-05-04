@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Apple Beats & Threads</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Sedgwick Ave Display", cursive;
+            font-style: normal;
+            color: #f44ff6;
+            text-align: center;
+            background-image: url('nycskyline.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 7em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #d28303;
+        }
+        a {
+            color: #000000;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {margin-bottom: 40px;}
+        .artist-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-left: 30px;
+            align-items: center;
+        }
+        .artists {
+            flex: 1 1 auto;
+            margin: 0 10px;
+            margin-bottom: 20px;
+        }
+        .polaroid {
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 300px;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 4px 8px 0 #1186c9f8, 0 6px 20px 0 #d9f6aa96;
+            text-align: center;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .polaroid img {
+            width: 100%;
+        }
+        .container {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .skip {
+            background-color: #ffa500;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            left: -999px;
+        }
+    
+        .skip:focus {
+            left: 10px; 
+        }
+
+        .bubble {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 2px solid #000;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 90%;
+            backdrop-filter: blur(5px);
+        }
+
+        .mini-bubble {
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 1.5px solid #000;
+        border-radius: 15px;
+        padding: 15px 20px;
+        margin: 20px auto;
+        width: fit-content;
+        max-width: 90%;
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+    </style>
+</head>
+
+<body>
+    <a href="#skip" class="skip">Skip to Content</a><br>
+    <header>
+        <h1>BIG APPLE BEATS & THREADS</h1>
+        <nav>
+            <a href="https://rcgoodri-su.github.io/ist263/project/homepage">HOME</a> ||
+            <a href="https://rcgoodri-su.github.io/ist263/project/fashion">FASHION</a> ||
+            <a href="https://rcgoodri-su.github.io/ist263/project/exchange">CREATOR CONNECT</a>
+        </nav>
+        <div class="bubble">
+            <h2>Home for all things for the culture, by the culture</h2>
+        </div>
+        <hr>
+    </header>
+    
+    <div class="mini-bubble">
+        <h2 id="skip">FAVORITE ARTISTS</h2>
+    </div>
+    <div class="artist-container">
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://www.xxlmag.com/cash-cobain-interview-the-break/">
+                    <img src="cash-cobain.jpg" alt="Cash Cobain">
+                </a>
+                <div class="container">
+                    <p>Cash Cobain</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://music.apple.com/us/artist/chow-lee/1072228388">
+                    <img src="chow-lee.jpg" alt="Chow Lee">
+                </a>
+                <div class="container">
+                    <p>Chow Lee</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://music.apple.com/us/artist/r2r-moe/1511073634">
+                    <img src="r2r-moe.jpg" alt="R2R Moe">
+                </a>
+                <div class="container">
+                    <p>R2R Moe</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://music.apple.com/us/artist/vontee-the-singer/1312373148">
+                    <img src="vontee-the-singer.jpg" alt="Vontee The Singer">
+                </a>
+                <div class="container">
+                    <p>Vontee The Singer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="mini-bubble">
+        <h2>BRANDS ON THE RISE</h2>
+    </div>
+    <div class="artist-container">
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://octaviousmarks.us/collections/all?gad_source=1&gclid=CjwKCAjw3NyxBhBmEiwAyofDYSHa2kx5q2_zmuAucvOGZMOFTh9sCeKveMI5CIXuj11PogyYZkyQYhoCrn4QAvD_BwE">
+                    <img src="omnewyork.jpg" alt="OMNEWYORK BRAND">
+                </a>
+                <div class="container">
+                    <p>OMNEWYORK</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://selahclothing.co/collections/shop">
+                    <img src="selahclothingco.jpg" alt="SELAH CLOTHING">
+                </a>
+                <div class="container">
+                    <p>SELAH CLOTHING CO.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://dybbuknewyork.com/">
+                    <img src="dybbuk.jpg" alt="DYBBUK NEW YORK">
+                </a>
+                <div class="container">
+                    <p>DYBBUK NEW YORK</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="artists">
+            <div class="polaroid">
+                <a href="https://lostsinswrld.com/">
+                    <img src="lostsins.jpg" alt="Lost Sins Brand">
+                </a>
+                <div class="container">
+                    <p>LOST SINS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="bubble">
+        <h2>What's the Beat</h2>
+        <h3>Groove to my handpicked playlist that captures the essence of the Big Apple's hip-hop scene, blending the latest hits with iconic tracks that define the city's sound.</h3>
+        <iframe allow="autoplay *; encrypted-media *; fullscreen" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/vibey/pl.u-gxblldxTMVk8Yd"></iframe>
+    </div>
+</body>
+</html>
